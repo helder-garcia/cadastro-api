@@ -9,7 +9,6 @@ module.exports = {
 	migrate : 'safe',
 	attributes : {
 		username : 'string',
-		unitnumber : 'string',
-		id : 'integer'
+		unitnumber : 'string'
 	}
 };

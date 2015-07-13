@@ -24,8 +24,15 @@ module.exports.policies = {
 
 	'*': true,
 	'UserController' : {
-		find : 'verifyToken',
-		findOne : 'verifyToken',
+		//find : 'verifyToken',
+		//findOne : 'verifyToken',
+		'*' : true
+	},
+	'OwnerController' : {
+		find : true,
+		findOne : true,
+		destroy : true,
+		create : 'verifyToken',
 		'*' : false
 	}
 /*******************************************************************************
