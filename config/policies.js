@@ -33,6 +33,15 @@ module.exports.policies = {
 		findOne : true,
 		destroy : true,
 		create : 'verifyToken',
+		update : 'verifyToken',
+		'*' : false
+	},
+	'OwnerController' : {
+		find : true,
+		findOne : true,
+		destroy : true,
+		create : 'verifyToken',
+		update : 'verifyToken',
 		'*' : false
 	}
 /*******************************************************************************
