@@ -29,17 +29,17 @@ module.exports.policies = {
 		'*' : true
 	},
 	'OwnerController' : {
-		find : true,
-		findOne : true,
-		destroy : true,
+		find : 'verifyToken',
+		findOne : 'verifyToken',
+		destroy : 'verifyToken',
 		create : 'verifyToken',
 		update : 'verifyToken',
 		'*' : false
 	},
-	'OwnerController' : {
-		find : true,
-		findOne : true,
-		destroy : true,
+	'RenterController' : {
+		find : 'verifyToken',
+		findOne : 'verifyToken',
+		destroy : 'verifyToken',
 		create : 'verifyToken',
 		update : 'verifyToken',
 		'*' : false
